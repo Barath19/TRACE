@@ -12,13 +12,15 @@ requireds = ["opencv-python","torch",
         'numpy>=1.21.0',
         'typing-extensions>=4.1',
         'scipy',
-        'lap']
+        'lap',
+        'smplx',
+        'open3d']
 
 setuptools.setup(
     name='simple_romp',
-    version='2.0.2',
-    author="Yu Sun",
-    author_email="yusunhit@gmail.com",
+    version='2.0.3',
+    author="Barath19",
+    author_email="bk190196@gmail.com",
     setup_requires=[
         # Setuptools 18.0 properly handles Cython extensions.
         'setuptools>=18.0.0',
@@ -26,7 +28,9 @@ setuptools.setup(
         'numpy>=1.21.0',
         'typing-extensions>=4.1',
         'scipy',
-        'lap'],
+        'lap',
+        'smplx',
+        'open3d'],
     install_requires=requireds,
     description="ROMP [ICCV21], BEV [CVPR22], TRACE [CVPR23]",
     long_description=long_description,
