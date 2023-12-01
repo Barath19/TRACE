@@ -87,48 +87,6 @@ python -m trace2.show --smpl_model_folder /path/to/smpl_model_data --preds_path 
 ```
 
 
-## TRACE Benchmark Evaluation
-
-The evaluation code of TRACE is integrated into `simple-romp`, `trace2/eval.py`, `trace2/evaluation` folder.
-
-To prepare the evaluation datasets, please refer to [trace_dataset.md](../../docs/trace_dataset.md).  
-
-Please set the path to datasets in **dataset_dir of `simple-romp/trace2/eval.py`**, and then run:
-
-### DynaCam
-For details of DynaCam dataset, please refer to [[DynaCam Dataset]](https://github.com/Arthur151/DynaCam), which directly provides [predictions](https://github.com/Arthur151/DynaCam/releases/tag/predictions), and code for evaluation and visualization. 
-
-You may also evaluate on DynaCam via running
-```
-cd simple_romp/trace2
-python -m eval --eval_dataset=DynaCam
-```
-
-### MuPoTS
-Please download the MuPoTS dataset from [official website](https://vcai.mpi-inf.mpg.de/projects/SingleShotMultiPerson/) and the packed annotations from [here](https://pan.baidu.com/s/1QIamBv1arpblTboiSyuJrw?pwd=vswt). Then please set the mupots's dataset_dir in `simple-romp/trace2/eval.py`.
-```
-cd simple_romp/trace2
-python -m eval --eval_dataset=mupots
-```
-
-### Dyna3DPW
-Please download the Dyna3DPW dataset from [here](https://pan.baidu.com/s/1r7b6Oot5iv-aIxdcNZE1_g?pwd=tmct). Then please set the Dyna3DPW's dataset_dir in `simple-romp/trace2/eval.py`.
-
-```
-cd simple_romp/trace2
-python -m eval --eval_dataset=Dyna3DPW
-```
-
-### 3DPW
-**Due to an error [here](PMPJPE_BUG_REPORT.md), we are sorry to report that the previous evaluation results on 3DPW were wrong. After correction, the results on 3DPW are PAMPJPE 50.8, MPJPE 80.3, PVE 98.1. We sincerely apologize for this error.**
-
-Please download the 3DPW dataset from [official website](https://virtualhumans.mpi-inf.mpg.de/3DPW/license.html) and the packed annotations from [here](https://pan.baidu.com/s/1OjwJNxxzvqe_bFXGMKaI2A?pwd=qfz2). Then please set the 3DPW's dataset_dir in `simple-romp/trace2/eval.py`.
-```
-cd simple_romp/trace2
-python -m eval --eval_dataset=3DPW
-```
-
-
 ## Citation
 ```bibtex
 @InProceedings{TRACE,
