@@ -72,7 +72,6 @@ Optional functions:
 --save_video
 
 # Output folder where the results are stored
-
 --results_save_dir
 ```
 

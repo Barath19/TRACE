@@ -18,3 +18,5 @@ simple_romp/.DS_Store
 .DS_Store
 *.pkl
 *.npy
+*.jpg
+*.npz
