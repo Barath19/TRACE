@@ -70,6 +70,10 @@ Optional functions:
 
 # To save the rendering results in camera coordinates, please add:
 --save_video
+
+# Output folder where the results are stored
+
+--results_save_dir
 ```
 
 ## Visualization 
